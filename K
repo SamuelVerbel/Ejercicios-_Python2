@@ -1,0 +1,11 @@
+materias = int(input("Ingrese el número de materias: "))
+costo_materia = float(input("Ingrese el costo por materia: "))
+promedio = float(input("Ingrese el promedio del alumno: "))
+total = materias * costo_materia
+
+if promedio >= 9:
+    total = total * 0.70
+else:
+    total = total * 1.10
+
+print("Total a pagar:", total)
