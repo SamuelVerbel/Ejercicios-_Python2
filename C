@@ -1,0 +1,9 @@
+valor = float(input("Ingrese el valor del producto: "))
+
+if valor >= 20000:
+    descuento = valor * 0.10
+else:
+    descuento = valor * 0.02
+
+print("Descuento aplicado:", descuento)
+print("Total a pagar:", valor - descuento)
