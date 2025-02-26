@@ -1,0 +1,9 @@
+cantidad = int(input("Ingrese la cantidad de llantas: "))
+
+if cantidad < 5:
+    precio = 800
+else:
+    precio = 700
+
+total = cantidad * precio
+print("Total a pagar:", total)
