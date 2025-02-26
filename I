@@ -1,0 +1,9 @@
+edad = int(input("Ingrese su edad: "))
+sexo = input("Ingrese su sexo (masculino/femenino): ").lower()
+
+if sexo == "femenino":
+    pulsaciones = (220 - edad) / 10
+else:
+    pulsaciones = (210 - edad) / 10
+
+print("Número de pulsaciones:", pulsaciones)
