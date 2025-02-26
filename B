@@ -1,0 +1,12 @@
+sueldo = float(input("Ingrese el sueldo del trabajador: "))
+
+if sueldo <= 100000:
+    descuento = sueldo * 0.10
+elif sueldo <= 200000:
+    descuento = 100000 * 0.10 + (sueldo - 100000) * 0.05
+else:
+    descuento = 100000 * 0.10 + 100000 * 0.05 + (sueldo - 200000) * 0.03
+
+sueldo_neto = sueldo - descuento
+print("Descuento:", descuento)
+print("Sueldo neto:", sueldo_neto)
