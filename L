@@ -1,0 +1,13 @@
+costo_casa = float(input("Ingrese el costo de la casa: "))
+ingresos = float(input("Ingrese sus ingresos mensuales: "))
+
+if ingresos < 8000:
+    enganche = costo_casa * 0.15
+    plazo = 10
+else:
+    enganche = costo_casa * 0.30
+    plazo = 7
+
+pago_mensual = (costo_casa - enganche) / (plazo * 12)
+print("Enganche:", enganche)
+print("Pago mensual:", pago_mensual)
