@@ -1,0 +1,12 @@
+precio_unitario = float(input("Ingrese el precio unitario: "))
+cantidad = int(input("Ingrese la cantidad comprada: "))
+subtotal = precio_unitario * cantidad
+iva = subtotal * 0.19
+precio_bruto = subtotal + iva
+
+if precio_bruto > 13000:
+    descuento = precio_bruto * 0.05
+else:
+    descuento = 0
+
+print("Precio final:", precio_bruto - descuento)
