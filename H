@@ -1,0 +1,9 @@
+total_compra = float(input("Ingrese el total de la compra: "))
+numero_azar = int(input("Ingrese el número al azar: "))
+
+if numero_azar < 74:
+    descuento = total_compra * 0.15
+else:
+    descuento = total_compra * 0.20
+
+print("Descuento aplicado:", descuento)
